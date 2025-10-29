@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.center-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.logo_acceuil {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.logo-header-small {
+  width: 50px; /* plus petit sur le menu */
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
