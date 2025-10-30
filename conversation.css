@@ -1,0 +1,79 @@
+/* Style général */
+body {
+  background-color: #f7f9fb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Conteneur principal */
+.conversation-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.conversation-container h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+/* Cartes de conversation */
+.conversation-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.conversation-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  background-color: #f0f7ff;
+}
+
+.conversation-card:active {
+  transform: scale(0.98);
+}
+
+/* Avatar */
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+/* Texte */
+.conversation-text h2 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.conversation-text p {
+  margin: 3px 0 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Heure */
+.time {
+  margin-left: auto;
+  font-size: 0.75em;
+  color: #999;
+}
+
+/* Effet d'appui visuel */
+.conversation-card.clicked {
+  background-color: #dbeafe;
+  transition: background-color 0.3s ease;
+}

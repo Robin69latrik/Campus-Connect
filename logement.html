@@ -3,29 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accueil</title>
+  <title>Logement</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="logement.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo-header-small">
+    <button id="menu-btn">Menu</button>
+    <nav id="menu" class="hidden">
+      <a href="sports.html">Sports</a>
+      <a href="logement.html">Logement</a>
+      <a href="parrain.html">Parrain / Marraine</a>
+      <a href="conversation.html">Conversation</a>
+      <a href="home.html">Accueil</a>
+    </nav>
+  </header>
 
-<header>
-  <img src="logo.png" alt="Logo" class="logo-header-small">
-  <button id="menu-btn">Menu</button>
-  <nav id="menu" class="hidden">
-    <a href="home.html">Accueil</a>
-    <a href="sports.html">Sports</a>
-    <a href="logement.html">Logement</a>
-    <a href="parrain.html">Parrain / Marraine</a>
-    <a href="campus.html">Campus</a>
-  </nav>
-</header>
+  <section class="logement-section">
+    <h2>Nos logements disponibles</h2>
+    <div class="logement-container" id="logements-container"></div>
+  </section>
 
-<main>
-  <h1>Accueil</h1>
-  <div id="infos"></div>
-  <button id="btn">Voir infos</button>
-</main>
+  <section class="map-section">
+    <h2>Carte des logements</h2>
+    <div id="map"></div>
+  </section>
 
-<script src="script.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script> <!-- ton menu -->
+  <script src="logement.js"></script> <!-- spécifique à cette page -->
+
 </body>
 </html>

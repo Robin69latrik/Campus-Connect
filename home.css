@@ -1,0 +1,259 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.center-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.logo_acceuil {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.logo-header-small {
+  width: 50px; /* plus petit sur le menu */
+}
+
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1e90ff;
+  color: white;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.home-main {
+  padding: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: linear-gradient(135deg,#ffffff 0%, #eaf4ff 100%);
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(20,40,80,0.06);
+  margin-bottom: 16px;
+}
+
+.hero-content h1 {
+  margin: 0 0 6px 0;
+  font-size: 1.6rem;
+  color: #0d3b66;
+}
+
+.subtitle {
+  margin: 0;
+  color: #335;
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+.logo-hero {
+  width: 90px; /* tu peux augmenter */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* --- Controls --- */
+.feed-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0 18px;
+}
+
+#search {
+  flex: 1 1 240px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d7e7ff;
+  outline: none;
+  background: white;
+  box-shadow: 0 2px 6px rgba(10,30,80,0.03);
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filter {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #f0f5ff;
+  color: #0d3b66;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter.active {
+  background: #1e90ff;
+  color: white;
+}
+
+/* --- Feed / Cards --- */
+.feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: linear-gradient(180deg,#fff,#fbfdff);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(20,40,80,0.06);
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+.card .media {
+  height: 140px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card .card-body {
+  padding: 12px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .meta {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgba(30,144,255,0.12);
+  color: #0d3b66;
+  font-weight: 700;
+}
+
+.time {
+  font-size: 0.78rem;
+  color: #556;
+  opacity: .8;
+}
+
+.card h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  color: #032b4b;
+}
+
+.card p.excerpt {
+  margin: 0 0 8px 0;
+  color: #334;
+  font-size: 0.95rem;
+  opacity: 0.95;
+  flex: 1;
+}
+
+/* actions row */
+.actions {
+  display:flex;
+  gap:8px;
+  align-items:center;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.action-btn {
+  border: none;
+  background: transparent;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.action-btn.like.active {
+  color: #ff6b6b;
+}
+
+.action-btn.bookmark.active {
+  color: #ffb86b;
+}
+
+/* empty state */
+.empty {
+  text-align:center;
+  padding: 24px;
+  color: #556;
+}
+.hidden { display: none; }
+
+/* responsive tweaks */
+@media (max-width:600px) {
+  .hero { flex-direction: column; align-items: center; text-align: center; }
+  .logo-hero { width: 110px; }
+}
