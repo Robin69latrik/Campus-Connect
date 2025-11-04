@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Filleul</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="formulaire.css">
+</head>
+<body class="page-formulaire">
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo-header-small">
+    <button id="menu-btn">Menu</button>
+    <nav id="menu" class="hidden">
+      <a href="home.html">Accueil</a>
+      <a href="sports.html">Sports</a>
+      <a href="logement.html">Logement</a>
+      <a href="conversation.html">Conversation</a>
+      <a href="parrain.html">Parrain / Marraine</a>
+    </nav>
+  </header>
+
+  <main class="contenu">
+    <form id="formFilleul" class="formulaire">
+      <label>Nom complet</label>
+      <input type="text" required placeholder="Ex : Emma Laurent">
+
+      <label>Email</label>
+      <input type="email" required placeholder="exemple@mail.com">
+
+      <label>Programme ou spécialité</label>
+      <input type="text" required placeholder="Ex : Robotique, Chimie, Info...">
+
+      <label>Centres d'intérêt</label>
+      <textarea rows="3" required placeholder="Ex : sport, voyages, jeux vidéos..."></textarea>
+
+      <label>Ce que tu aimerais partager avec ton parrain :</label>
+      <textarea rows="3" required placeholder="Ex : conseils, activités, échanges..."></textarea>
+
+      <button type="submit" class="btn-envoyer">Envoyer</button>
+    </form>
+  </main>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-contenu">
+      <h2>🎉 Demande envoyée !</h2>
+      <p>Ton futur parrain ou marraine va te contacter très bientôt !</p>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script defer src="formulaire.js"></script>
+</body>
+</html>

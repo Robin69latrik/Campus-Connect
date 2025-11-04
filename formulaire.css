@@ -1,0 +1,116 @@
+body.page-formulaire {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Header --- */
+.header {
+  background-color: #2563eb;
+  color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.retour {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/* --- Formulaire --- */
+.contenu {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+}
+.formulaire {
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formulaire label {
+  font-weight: 600;
+  color: #374151;
+}
+.formulaire input,
+.formulaire textarea {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.95rem;
+  transition: border 0.2s;
+}
+.formulaire input:focus,
+.formulaire textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+.btn-envoyer {
+  background: #2563eb;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-envoyer:hover {
+  background: #1e40af;
+}
+
+/* --- Popup --- */
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+.popup.hidden {
+  display: none;
+}
+.popup-contenu {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 85%;
+  max-width: 350px;
+  animation: pop 0.4s ease;
+}
+.popup-contenu h2 {
+  margin: 0 0 10px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

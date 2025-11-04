@@ -5,6 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Basket - Campus de la Doua</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #fff7f0, #ffd8b5);
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #ffffffcc;
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img.logo-header-small {
+      height: 45px;
+    }
+
+    #menu-btn {
+      background-color: #e67e22;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    #menu-btn:hover {
+      background-color: #ca6611;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e67e22;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #2c3e50;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .content {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 90%;
+      padding: 30px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .content img {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 25px;
+      font-size: 1.4em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #fff1e1;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    ul li:hover {
+      transform: scale(1.02);
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ca6611;
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
 <body>
   <header>
@@ -19,23 +151,25 @@
     </nav>
   </header>
 
-  <h1>Basketball</h1>
-  <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1780" width="500px" style="max-width:100%;border-radius:8px;">
-  <p>Le basketball est un sport collectif où deux équipes de cinq joueurs s’affrontent pour marquer des points en lançant le ballon dans le panier adverse.</p>
+  <main class="content">
+    <h1>Basketball</h1>
+    <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1780" alt="Basketball">
+    <p>Le basketball est un sport collectif où deux équipes de cinq joueurs s’affrontent pour marquer des points en lançant le ballon dans le panier adverse.</p>
 
-  <h2>Matériel nécessaire :</h2>
-  <ul>
-    <li>Ballon de basketball</li>
-    <li>Maillot et short</li>
-    <li>Chaussures adaptées (basketball)</li>
-    <li>Protège-poignets et genouillères (optionnel)</li>
-  </ul>
+    <h2>Matériel nécessaire :</h2>
+    <ul>
+      <li>Ballon de basketball</li>
+      <li>Maillot et short</li>
+      <li>Chaussures adaptées (basketball)</li>
+      <li>Protège-poignets et genouillères (optionnel)</li>
+    </ul>
 
-  <h2>Lieu sur le campus :</h2>
-  <p>Gymnase principal du campus de la Doua, Terrain intérieur avec paniers officiels.</p>
+    <h2>Lieu sur le campus :</h2>
+    <p>Gymnase principal du campus de la Doua, Terrain intérieur avec paniers officiels.</p>
 
-  <button style="padding:10px 20px;background-color:#3498db;color:white;border:none;border-radius:6px;cursor:pointer;">Inscris-toi à ce sport</button>
+    <button>Inscris-toi à ce sport</button>
+  </main>
 
-  <script src="script.js"></script> <!-- menu déroulant -->
+  <script src="script.js"></script>
 </body>
 </html>

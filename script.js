@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tag: "events",
       time: "2025-10-28T18:00:00",
       excerpt: "Rencontre avec les associations étudiantes : stands, jeux et inscriptions. Boissons offertes pour les premiers arrivants.",
-      image: "https://picsum.photos/seed/assos/800/400"
+      image: "https://images.pexels.com/photos/8344905/pexels-photo-8344905.jpeg"
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tag: "sport",
       time: "2025-10-27T15:30:00",
       excerpt: "Viens supporter l'équipe de la promo 2026. Buvette et DJ à partir de 17h.",
-      image: "https://picsum.photos/seed/foot/800/400"
+      image: "https://images.pexels.com/photos/5896843/pexels-photo-5896843.jpeg"
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tag: "housing",
       time: "2025-10-25T09:00:00",
       excerpt: "Chambre en colocation libre 1er décembre. Appartement meublé, 10 min à pied du campus.",
-      image: "https://picsum.photos/seed/logement/800/400"
+      image: "https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg"
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tag: "parrain",
       time: "2025-10-23T11:00:00",
       excerpt: "Le programme de parrainage est relancé pour aider les nouveaux étudiants à mieux s'intégrer.",
-      image: "https://picsum.photos/seed/parrain/800/400"
+      image: "https://images.pexels.com/photos/7972980/pexels-photo-7972980.jpeg"
     },
     {
       id: 5,
@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
       tag: "events",
       time: "2025-10-26T10:00:00",
       excerpt: "Découverte des laboratoires, bibliothèque et cafés locaux — ouverte à tous.",
-      image: "https://picsum.photos/seed/campus/800/400"
+      image: "https://images.pexels.com/photos/159490/yale-university-landscape-universities-schools-159490.jpeg"
     }
-  ];
+  ];  
 
   // --- utilitaires ---
   function timeAgo(iso) {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire Parrain</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="formulaire.css">
+</head>
+<body class="page-formulaire">
+
+  <header>
+    <img src="logo.png" alt="Logo" class="logo-header-small">
+    <button id="menu-btn">Menu</button>
+    <nav id="menu" class="hidden">
+      <a href="home.html">Accueil</a>
+      <a href="sports.html">Sports</a>
+      <a href="logement.html">Logement</a>
+      <a href="conversation.html">Conversation</a>
+      <a href="parrain.html">Parrain / Marraine</a>
+    </nav>
+  </header>
+
+  <!-- Formulaire -->
+  <main class="contenu">
+    <form id="formParrain" class="formulaire">
+      <label>Nom complet</label>
+      <input type="text" required placeholder="Ex : Alex Dupont">
+
+      <label>Email</label>
+      <input type="email" required placeholder="exemple@mail.com">
+
+      <label>Âge</label>
+      <input type="number" min="18" max="99" required placeholder="Ex : 22">
+
+      <label>Centres d’intérêt</label>
+      <textarea rows="3" required placeholder="Ex : sport, robotique, musique..."></textarea>
+
+      <label>Pourquoi veux-tu être parrain ?</label>
+      <textarea rows="3" required placeholder="Écris quelques lignes..."></textarea>
+
+      <button type="submit" class="btn-envoyer">Envoyer</button>
+    </form>
+  </main>
+
+  <!-- Popup de confirmation -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-contenu">
+      <h2>✅ Formulaire envoyé !</h2>
+      <p>Merci pour ton inscription.<br>Tu vas être redirigé vers la page d’accueil...</p>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+    <script defer src="formulaire.js"></script>
+</body>
+</html>

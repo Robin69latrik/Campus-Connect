@@ -5,6 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Football - Campus de la Doua</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background-color: #ffffffcc;
+      backdrop-filter: blur(5px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header img.logo-header-small {
+      height: 45px;
+    }
+
+    #menu-btn {
+      background-color: #3498db;
+      border: none;
+      padding: 10px 16px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    #menu-btn:hover {
+      background-color: #217dbb;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #2c3e50;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .content {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      max-width: 700px;
+      width: 90%;
+      padding: 30px;
+      margin: 30px auto;
+      text-align: center;
+    }
+
+    .content img {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 25px;
+      font-size: 1.4em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #ecf6ff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    ul li:hover {
+      transform: scale(1.02);
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 24px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #217dbb;
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
 <body>
   <header>
@@ -19,22 +151,24 @@
     </nav>
   </header>
 
-  <h1>Football</h1>
-  <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg" width="500px" alt="Football" style="max-width:100%;border-radius:8px;">
-  <p>Le football est un sport collectif se jouant à 11 contre 11. Les équipes s'affrontent pour marquer dans le but adverse.</p>
+  <main class="content">
+    <h1>Football</h1>
+    <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg" alt="Football">
+    <p>Le football est un sport collectif se jouant à 11 contre 11. Les équipes s'affrontent pour marquer dans le but adverse.</p>
 
-  <h2>Matériel nécessaire :</h2>
-  <ul>
-    <li>Ballon de football</li>
-    <li>Maillot et short</li>
-    <li>Chaussures adaptées (crampons)</li>
-    <li>Protège-tibias</li>
-  </ul>
+    <h2>Matériel nécessaire :</h2>
+    <ul>
+      <li>Ballon de football</li>
+      <li>Maillot et short</li>
+      <li>Chaussures adaptées (crampons)</li>
+      <li>Protège-tibias</li>
+    </ul>
 
-  <h2>Lieu sur le campus :</h2>
-  <p>Stade universitaire de la Doua, Terrain extérieur proche du bâtiment central.</p>
+    <h2>Lieu sur le campus :</h2>
+    <p>Stade universitaire de la Doua, Terrain extérieur proche du bâtiment central.</p>
 
-  <button style="padding:10px 20px;background-color:#3498db;color:white;border:none;border-radius:6px;cursor:pointer;">Inscris-toi à ce sport</button>
+    <button>Inscris-toi à ce sport</button>
+  </main>
 
   <script src="script.js"></script>
 </body>
